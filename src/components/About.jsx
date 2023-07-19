@@ -3,34 +3,42 @@ export const About = () => {
     {
       iconName: "fa-solid fa-c fa-2xl",
       skill: 4,
+      name: "ANSI C",
     },
     {
       iconName: "fa-solid fa-code fa-2xl",
       skill: 4,
+      name: "C++",
     },
     {
       iconName: "fa-brands fa-java fa-2xl",
       skill: 3,
+      name: "JAVA",
     },
     {
       iconName: "fa-brands fa-python fa-2xl",
       skill: 2,
+      name: "PYTHON",
     },
     {
       iconName: "fa-brands fa-html5 fa-2xl",
       skill: 4,
+      name: "HTML",
     },
     {
       iconName: "fa-brands fa-css3-alt fa-2xl",
       skill: 3,
+      name: "CSS",
     },
     {
       iconName: "fa-brands fa-react fa-2xl",
       skill: 1,
+      name: "REACT",
     },
     {
       iconName: "fa-solid fa-database fa-2xl",
       skill: 4,
+      name: "MYSQL",
     },
   ];
   const generateCircles = (skill) => {
@@ -73,20 +81,23 @@ export const About = () => {
           C++.
         </p>
         <h1 className="text-center mb-3">Technologies</h1>
-        <div className="container-sm">
-          <div className="row m-3">
+        <div className="container">
+          <div class="row">
             {technologies.map((technology, index) => (
-              <div
-                key={index}
-                className="col-md-4 text-light text-center bg-dark py-3 rounded"
-              >
-                <span
-                  className={technology.iconName}
-                  style={{ color: "#ffffff", fontSize: "2rem" }}
-                ></span>
-                <br />
-                <br />
-                {generateCircles(technology.skill)}
+              <div class="col-md-4 mb-3">
+                <div
+                  key={index}
+                  className="card text-light text-center bg-dark py-3 rounded"
+                >
+                  <div className="card-body">
+                    <span
+                      className={technology.iconName + "mb-5"}
+                      style={{ color: "#ffffff", fontSize: "2rem" }}
+                    ></span>
+                    <h5>{technology.name}</h5>
+                    {generateCircles(technology.skill)}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
