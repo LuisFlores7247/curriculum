@@ -1,0 +1,28 @@
+.bg-image {
+  position: relative;
+  z-index: 0; /* Fuerza que el fondo esté detrás del encabezado */
+  height: 100vh; /* Establece la altura del fondo para ocupar toda la pantalla */
+}
+
+.bg-image::before {
+  /* Estilos para el fondo */
+  content: "";
+  background-image: url("assets/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Valor de opacidad entre 0 y 1 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.project {
+  background-size: cover;
+  background-position: center;
+  background-image: var(--project-image);
+}
+
+
