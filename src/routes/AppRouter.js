@@ -9,9 +9,9 @@ export const AppRouter = () => {
     return <div>
         <Navbar></Navbar>
     <Routes>
-        <Route path="/" element={<Home></Home>}/>
-        <Route path="/about" element={<About></About>}/>
-        <Route path="/projects" element={<Projects></Projects>}/>
+        <Route path="/curriculum/" element={<Home></Home>}/>
+        <Route path="/curriculum/about" element={<About></About>}/>
+        <Route path="/curriculum/projects" element={<Projects></Projects>}/>
     </Routes>
     </div>
 }
