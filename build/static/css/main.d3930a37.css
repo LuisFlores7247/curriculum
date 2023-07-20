@@ -1,0 +1,2 @@
+.bg-image{height:100vh;position:relative;z-index:0}.bg-image:before{background-image:url(/static/media/bg.2da1adc5f7ebf66e9537.jpg);bottom:0;content:"";left:0;opacity:.4;position:absolute;right:0;top:0;z-index:-1}.bg-image:before,.project{background-position:50%;background-size:cover}.project{background-image:var(--project-image)}
+/*# sourceMappingURL=main.d3930a37.css.map*/
